@@ -1,0 +1,422 @@
+/* Reset margin and padding for the body and other elements */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body and font */
+body {
+    background-color: #f27229;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style for the header */
+.topnav {
+    background-color: #ff5d00;
+    overflow: visible;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3em;
+    z-index: 1;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding-right: 7%;
+  }
+  .topnav a.icon {
+    display: none;
+    padding: 1%;
+    float: left;
+  }
+.search-icon {
+    margin-right: 30px;
+}
+.text-secondary {
+    color: #3d5d6f;
+  }
+  
+  .h4,
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    color: #333;
+  }
+  
+  .fa,
+  .fas {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  a.text-secondary:focus,
+  a.text-secondary:hover {
+    text-decoration: none;
+    color: #22343e;
+  }
+  
+  #accordion .fa-plus {
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
+  
+  #accordion a[aria-expanded=true] .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* Style for the hero section */
+.hero {
+    background-color: #ff8146;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Style for the email signup section */
+.email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.email-signup button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+}
+/* CSS for centering the "Sign Up" button */
+.center-button {
+    text-align: center;
+    margin-left: 48%;
+    margin-top: 3%;
+}
+
+
+/* Style for the upgrade section */
+.upgrade-section {
+    background-color: #ffbf00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.upgrade-section-text {
+    width: 60%;
+}
+
+.upgrade-section-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the image box */
+.image-box {
+    width: 35%;
+}
+
+.image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Style for the carousel section */
+.carousel-section {
+    background-color: #ff8146;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.carousel-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.carousel div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f27229;
+}
+
+/* Style for the new sections */
+.new-section {
+    background-color: #ffbf00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.new-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style for the section image box */
+.section-image-box {
+    width: 35%;
+}
+
+.section-image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Style for the final email sign-up section */
+.final-email-signup {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.final-email-signup input[type="email"] {
+    padding: 15px;
+    width: 80%;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.final-email-signup input[type="email"]::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.final-email-signup button {
+    background-color: #f27229;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #ff5d00;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.footerfaq {
+    background-color: #ff5d00;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20%;
+}
+.appbilledecontainer {
+    background-color: #ffa600;
+ padding-top: 3%;
+ padding-bottom: 3%;
+    text-align: left;
+    display: flex;
+justify-content: space-evenly;
+}
+.step {
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    background-color: #ffa600;
+    color: white ;
+}
+.profile {
+    background-color: #ff8146;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.inddeler {
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.inddeler1 {
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+.inddeler1 input {
+    margin-top: 4%;
+}
+.inddeler1 input[type=text] {
+    width: 60%;
+    height: 10%;
+}
+.profilboks {
+    background-color: #ffa600;
+    padding: 40px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.profilboks1 {
+    background-color:#ff5d00;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #be2031;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #be2031;
+    cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  select {
+    width: 15%;
+    text-align: center;
+    height: 30%;
+    margin-bottom: 5%;
+    background-color: #ff5d00;
+    color: white;
+  }
+  #cancel  {
+        background-color: #6b2b2b;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+    margin-left: 45%;
+  }
+@media screen and (max-width: 600px) {
+    .topnav {display: block;}
+    .topnav a {display: none;}
+    .logo {display: none;}
+    .topnav a.icon {
+      display: block;
+      float: left;
+    }
+  
+
+    .topnav.responsive {position: relative;
+    height: auto;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 1%;
+      }
+      .appbilledecontainer {
+        background-color: #ffa600;
+        padding: 40px 0;
+        text-align: left;
+        display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .appbilleder {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jabs! Your New Dream Home</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <a href="about.html">About</a>
+            <a href="app.html">The app</a>
+            <a href="profile.html">Profile</a>
+            <a href="sub.html">Subscription</a>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </header>
+    <div class="profile">
+        <div class="inddeler1">
+            <label for="fornavn"></label><br>
+            <input type="text" id="fornavn" name="fornavn" placeholder="First name">
+            <label for="efternavn"></label><br>
+            <input type="text" id="efternavn" name="efternavn" placeholder="Last name">
+            <label for="email"></label><br>
+            <input type="text" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="inddeler">
+        <h1>Your profile</h1>
+<img src="images/flueben.png" alt="">
+    </div>
+    <div class="inddeler1">
+        <label>
+            <input type="checkbox"> 
+            Tenant
+          </label>
+          <br>
+          <label>
+            <input type="checkbox"> 
+            Landlord
+          </label>
+    </div>
+</div>
+<div class="profilboks">
+    <h3>Monthly rent budget</h3>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="10000" value="5000" class="slider" id="monthly">
+        <p>Budget: <span id="budget"></span> DKK</p>
+      </div>
+      
+</div>
+<div class="profilboks1">
+    <h3>Monthly rent budget</h3>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="30000" value="15000" class="slider" id="deposit">
+        <p>Budget: <span id="depositbudget"></span> DKK</p>
+      </div>
+      
+</div>
+
+<div class="profilboks">
+<h3>Choose your city</h3>
+<label for="by"></label>
+<select id="by" name="by">
+  <option value="Aarhus">Aarhus</option>
+  <option value="Copenhagen">Copenhagen</option>
+  <option value="Aalborg">Aalborg</option>
+  <option value="Odense">Odense</option>
+</select>
+      </div>
+
+<div class="profilboks1">
+    <h3>Radius</h3>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="10" value="5" class="slider" id="radius">
+        <p>Radius: <span id="radiusoutput"></span> km</p>
+      </div>
+      <div class="footer">
+        <p>&copy; 2023 Jabs! Your New Dream Home | All Rights Reserved</p>
+    </div>
+</body>
+</html>
