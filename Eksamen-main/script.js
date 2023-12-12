@@ -12,21 +12,22 @@ function burger() {
 var output = document.getElementById("budget");
 output.innerHTML = slider.value;
 
-slider.oninput = function() {
+slider.oninput = function () {
   output.innerHTML = this.value;
 }
 
-var slider = document.getElementById("deposit");
-var output = document.getElementById("depositbudget");
-output.innerHTML = slider.value;
+var slider1 = document.getElementById("deposit");
+var output1 = document.getElementById("depositbudget");
+output1.innerHTML = slider1.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
 }
-var slider = document.getElementById("radius");
-var output = document.getElementById("radiusoutput");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
+var slider2 = document.getElementById("radius");
+var output2 = document.getElementById("radiusoutput");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
 }
