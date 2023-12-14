@@ -5,6 +5,9 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,7 +26,35 @@
     <div class="hero">
         <h1>Jabs! Your New Dream Home</h1>
         <p>Find your dream home with a swipe!</p>
+        
+    <div class="container">
+        <div class="slideshow">
+          <div class="slider__slides">
+            <div class="slider__slide active">
+                <img class="slidebillede" src="images/app1.png" alt="JABS" />
+            </div>
+            <div class="slider__slide">
+                <img class="slidebillede" src="images/app7.png" alt="JABS" />
+          </div>
+          <div class="slider__slide">
+            <img class="slidebillede" src="images/app10.png" alt="JABS" />
+      </div>
+      <div class="slider__slide">
+        <img class="slidebillede" src="images/app12.png" alt="JABS" />
+  </div>
+          <div id="nav-button--prev" class="slider__nav-button"></div>
+          <div id="nav-button--next" class="slider__nav-button"></div>
+          <div class="slider__nav">
+            <div class="slider__navlink active"></div>
+            <div class="slider__navlink"></div>
+            <div class="slider__navlink"></div>
+            <div class="slider__navlink"></div>
+          </div>
+        </div>
+      </div>
     </div>
+    </div>
+    
 
     <div class="email-signup">
         <input type="email" id="email" placeholder="Enter your email here!">
@@ -36,22 +67,13 @@
             <p>Are you tired of scrolling endlessly through outdated rental websites? Bid farewell to the hassle and become a part of Jabs, the groundbreaking rental platform that makes discovering your ideal home a breeze. With Jabs, you're in control as you swipe through potential homes, effortlessly matching with compatible renters. Welcome to the future of renting, where simplicity, affordability, and social connections merge to create an unparalleled rental experience.</p>
         </div>
         <div class="image-box">
-            <img src="your-image.jpg" alt="Image">
+            <img src="images/forsidebillede 1.png" alt="Image">
         </div>
     </div>
 
-    <div class="carousel-section">
-        <h1>Explore Seamless Living: Dive into Our Mobile Experience</h1>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-            </div>
-        </div>
-    </div>
+
+
+    
 
     <!-- First new section -->
     <div class="new-section">
@@ -87,7 +109,7 @@
     </div>
 
     <!-- Final email sign-up section -->
-    <div class="final-email-signup">
+    <div class="email-signup">
         <input type="email" id="final-email" placeholder="Enter your email here!">
         <button class="center-button">Sign Up!</button>
     </div>

@@ -8,26 +8,47 @@ function burger() {
   
 
   }
-  var slider = document.getElementById("monthly");
-var output = document.getElementById("budget");
-output.innerHTML = slider.value;
+  var rangeSlider = function() {
+    var sliders = document.querySelectorAll('.slidecontainer');
+    
+    sliders.forEach(function(slider) {
+      var range = slider.querySelector('.range-slider__range');
+      var value = slider.querySelector('.range-slider__value');
+  
+      var values = slider.querySelectorAll('.range-slider__value');
+      values.forEach(function(val) {
+        var valValue = val.previousElementSibling.getAttribute('value');
+        val.innerHTML = valValue;
+      });
+  
+      range.addEventListener('input', function() {
+        value.innerHTML = this.value;
+      });
+    });
+  };
+  
+  rangeSlider();
 
-slider.oninput = function () {
-  output.innerHTML = this.value;
+let slides = document.getElementsByClassName("slider__slide");
+let navlinks = document.getElementsByClassName("slider__navlink");
+let currentSlide = 0;
+
+document.getElementById("nav-button--next").addEventListener("click", () => {
+    changeSlide(currentSlide + 1)
+});
+document.getElementById("nav-button--prev").addEventListener("click", () => {
+    changeSlide(currentSlide - 1)
+});
+
+function changeSlide(moveTo) {
+    if (moveTo >= slides.length) {moveTo = 0;}
+    if (moveTo < 0) {moveTo = slides.length - 1;}
+    
+    slides[currentSlide].classList.toggle("active");
+    navlinks[currentSlide].classList.toggle("active");
+    slides[moveTo].classList.toggle("active");
+    navlinks[moveTo].classList.toggle("active");
+    
+    currentSlide = moveTo;
 }
 
-var slider1 = document.getElementById("deposit");
-var output1 = document.getElementById("depositbudget");
-output1.innerHTML = slider1.value;
-
-slider1.oninput = function() {
-  output1.innerHTML = this.value;
-}
-
-var slider2 = document.getElementById("radius");
-var output2 = document.getElementById("radiusoutput");
-output2.innerHTML = slider2.value;
-
-slider2.oninput = function() {
-  output2.innerHTML = this.value;
-}

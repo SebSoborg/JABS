@@ -29,8 +29,8 @@
             <input type="text" id="email" name="email" placeholder="Email">
         </div>
         <div class="inddeler">
-        <h1>Your profile</h1>
-<img src="images/flueben.png" alt="">
+        <h1>Sign up</h1>
+<img class="profilbillede" src="images/profilbillede.png" alt="">
     </div>
     <div class="inddeler1">
         <label>
@@ -47,16 +47,17 @@
 <div class="profilboks">
     <h3>Monthly rent budget</h3>
     <div class="slidecontainer">
-        <input type="range" min="1" max="10000" value="5000" class="slider" id="monthly">
-        <p>Budget: <span id="budget"></span> DKK</p>
-      </div>
+      <input class="range-slider__range" type="range" value="5000" min="1" max="10000">
+      <span class="range-slider__value">0</span> DKK
+    </div>
       
 </div>
 <div class="profilboks1">
-    <h3>Monthly rent budget</h3>
+    <h3>Deposit budget</h3>
     <div class="slidecontainer">
-        <input type="range" min="1" max="30000" value="15000" class="slider" id="deposit">
-        <p>Budget: <span id="depositbudget"></span> DKK</p>
+      <input class="range-slider__range" type="range" value="20000" min="1" max="40000">
+      <span class="range-slider__value">0</span> DKK
+    </div>
       </div>
       
 </div>
@@ -75,8 +76,9 @@
 <div class="profilboks1">
     <h3>Radius</h3>
     <div class="slidecontainer">
-        <input type="range" min="0" max="10" value="5" class="slider" id="radius">
-        <p>Radius: <span id="radiusoutput"></span> km</p>
+      <input class="range-slider__range" type="range" value="10" min="0" max="20">
+      <span class="range-slider__value">0</span> KM
+    </div>
       </div>
 </div>
       <div class="footer">
