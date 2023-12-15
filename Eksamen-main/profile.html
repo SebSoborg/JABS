@@ -5,44 +5,56 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="topnav" id="myTopnav">
-            <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-            <a href="about.html">About</a>
-            <a href="app.html">The app</a>
-            <a href="profile.html">Profile</a>
-            <a href="sub.html">Subscription</a>
-            <a href="javascript:void(0);" class="icon" onclick="burger()">
-              <i class="fa fa-bars"></i>
+          <a href="about.html">About</a>
+          <a href="app.html">The app</a>
+          <a id="logo" href="index.html"><img class="logo" src="images/JABS-Logo.png" alt="logo"></a>
+          <a id="logohøjre" href="profile.html">Profile</a>
+          <a href="faq.html">FAQ</a>
+          <a href="javascript:void(0);" class="icon" onclick="burger()">
+            <i class="fa fa-bars"></i>
             </a>
           </div>
     </header>
     <div class="profile">
-        <div class="inddeler1">
+
+      <h1>Sign up for the app</h1>
             <label for="fornavn"></label><br>
             <input type="text" id="fornavn" name="fornavn" placeholder="First name">
             <label for="efternavn"></label><br>
             <input type="text" id="efternavn" name="efternavn" placeholder="Last name">
             <label for="email"></label><br>
             <input type="text" id="email" name="email" placeholder="Email">
-        </div>
-        <div class="inddeler">
-        <h1>Sign up</h1>
-<img class="profilbillede" src="images/profilbillede.png" alt="">
+            <label for="city"></label><br>
+            <input type="text" id="city" name="city" placeholder="City">
+            <label for="address"></label><br>
+            <input type="text" id="address" name="address" placeholder="Address">
+            <label for="gender"></label><br>
+            <input type="text" id="gender" name="gender" placeholder="Gender">
+            <label for="info"></label><br>
+            <input type="text" id="info" name="info" placeholder="Tell us a bit about yourself">
+            <div id="tjek">
+            <label>
+              <input type="checkbox"> 
+              Tenant
+            </label>
+            <label>
+              <input type="checkbox"> 
+              Landlord
+            </label>
+          </div>
+        
+       
+
+
     </div>
-    <div class="inddeler1">
-        <label>
-            <input type="checkbox"> 
-            Tenant
-          </label>
-          <br>
-          <label>
-            <input type="checkbox"> 
-            Landlord
-          </label>
-    </div>
+
 </div>
 <div class="profilboks">
     <h3>Monthly rent budget</h3>
@@ -79,10 +91,12 @@
       <input class="range-slider__range" type="range" value="10" min="0" max="20">
       <span class="range-slider__value">0</span> KM
     </div>
+    <button id="signup">Sign up now!</button>
       </div>
 </div>
       <div class="footer">
         <p>&copy; 2023 Jabs! Your New Dream Home | All Rights Reserved</p>
+        <a href="faq.html">FAQ</a>
     </div>
 </body>
 </html>
